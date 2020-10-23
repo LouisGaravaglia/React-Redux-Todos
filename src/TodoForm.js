@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import './App.css';
 
-function TodoForm() {
+function TodoForm({addTodo}) {
     const [todo, setTodo] = useState("")
     const id = useSelector(store => store.id_keeper);
     const dispatch = useDispatch();

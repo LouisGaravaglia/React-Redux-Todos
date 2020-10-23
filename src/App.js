@@ -1,11 +1,8 @@
 import React from 'react';
-import rootReducer from "./rootReducer";
 import { useSelector, useDispatch } from "react-redux";
-import { createStore } from "redux";
-import { Provider } from "react-redux";
+import Todo from "./Todo";
+import TodoForm from "./TodoForm";
 import './App.css';
-
-const store = createStore();
 
 function App() {
   const dispatch = useDispatch();
